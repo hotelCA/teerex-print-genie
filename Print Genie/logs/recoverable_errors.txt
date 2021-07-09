@@ -286,3 +286,61 @@ Traceback (most recent call last):
     for barcode in prints:
 RuntimeError: dictionary changed size during iteration
 2020-07-20 22:33:17,944:  Execution took: 2 s.
+2021-06-29 22:38:58,285:  Encountered the following recoverable error:
+Barcode: 9781947588059
+Print mode: Automatic
+Printer: None
+Installed printers: set()
+Disabled printers: set()
+
+Traceback (most recent call last):
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\controller.py", line 153, in get_new_print_job
+    printer = self.get_printer()
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\controller.py", line 180, in get_printer
+    f'Installed printers: {self._print_config.printers}.'
+controller.NoPrinterAvailableError: Installed printers: set().Blacklisted printers: set()
+
+2021-06-29 22:43:46,485:  Encountered the following recoverable error:
+Barcode: 1485908
+Print mode: Automatic
+Printer: test_printer
+Installed printers: set()
+Disabled printers: set()
+
+Traceback (most recent call last):
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\controller.py", line 161, in get_new_print_job
+    create_design_and_send_to_printer(product_info, printer)
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\controller.py", line 233, in create_design_and_send_to_printer
+    print_properties = get_print_properties(image_file, product_info)
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\controller.py", line 253, in get_print_properties
+    product_size=vuvutv_utils.get_size(product_info))
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\measurements.py", line 64, in get_print_sizing
+    platen=platen)
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\measurements.py", line 106, in get_target_image_size
+    product_sizing = get_product_sizing(product_style, product_size)
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\measurements.py", line 96, in get_product_sizing
+    config.SIZING_PROFILES[product_style_keyword]['DEFAULT'])
+KeyError: 'GUYS_TEE'
+
+2021-06-29 22:53:18,345:  Encountered the following recoverable error:
+Barcode: 1485908
+Print mode: Automatic
+Printer: test_printer
+Installed printers: set()
+Disabled printers: set()
+
+Traceback (most recent call last):
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\controller.py", line 161, in get_new_print_job
+    create_design_and_send_to_printer(product_info, printer)
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\controller.py", line 243, in create_design_and_send_to_printer
+    printer=printer)
+  File "C:\Users\hotelca\PycharmProjects\teerex\printing\brother_utils.py", line 128, in send_to_printer
+    f'Process exited with code: {proc.returncode}\n\n'
+brother_utils.SendDesignToPrinterError: Process exited with code: 4294963994
+
+stdout: b''
+
+stderr: b''
+
+cmd: ['C:\\Users\\hotelca\\PycharmProjects\\teerex\\printing\\cli_bin\\GTX4CMD.exe', 'send', '-A', 'C:\\Users\\hotelca\\Desktop\\Design_ARX4\\1225283.arx4', '-P', 'test_printer']
+

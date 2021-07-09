@@ -1,13 +1,33 @@
 {
-    "HOODIE": {
-        "XS": ["HEIGHT", "9.5"],
-        "S": ["HEIGHT", "10.0"],
-        "M": ["HEIGHT", "10.5"],
-        "L": ["HEIGHT", "11.0"],
-        "XL": ["HEIGHT", "11.5"],
-        "2XL": ["HEIGHT", "11.5"],
-        "3XL": ["HEIGHT", "11.5"],
-        "4XL": ["HEIGHT", "11.5"],
-        "5XL": ["HEIGHT", "11.5"]
+    "DEFAULT": {
+        "XS": ["WIDTH", "11"],
+        "S": ["WIDTH", "11"],
+        "M": ["WIDTH", "11"],
+        "L": ["WIDTH", "11"],
+        "XL": ["WIDTH", "11.5"],
+        "2XL": ["WIDTH", "12"],
+        "3XL": ["WIDTH", "12.5"],
+        "4XL": ["WIDTH", "13"],
+        "5XL": ["WIDTH", "13"]
+    },
+    "ONESIE": {
+        "NB": ["WIDTH", "5"],
+        "6M": ["WIDTH", "7"],
+        "12M": ["WIDTH", "7"],
+        "18M": ["WIDTH", "7"],
+        "24M": ["WIDTH", "7"]
+    },
+    "YOUTH_TEE": {
+        "DEFAULT": ["WIDTH", "10"]
+    },
+    "LADIES_TEE": {
+        "DEFAULT": ["WIDTH", "11"]
+    },
+    "LADIES_TEE_V": {
+        "DEFAULT": ["WIDTH", "11"]
+    },
+    "LADIES_TANK_TOP": {
+        "DEFAULT": ["WIDTH", "11"]
     }
 }
+
